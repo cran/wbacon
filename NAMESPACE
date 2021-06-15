@@ -1,0 +1,46 @@
+importFrom("graphics",
+    "abline", "mtext", "panel.smooth", "par", "points", "strheight", "text",
+    "title")
+
+importFrom("grDevices",
+    "as.graphicsAnnot", "dev.flush", "dev.hold", "dev.interactive",
+    "devAskNewPage", "extendrange")
+
+importFrom("stats",
+    "cov", "na.pass", "qnorm", "qqnorm", "qt", "residuals")
+
+importFrom("hexbin",
+    "hexbin", "hexVP.loess", "hexVP.abline")
+
+S3method(plot, wbaconlm)
+
+export(is_outlier)
+S3method(is_outlier, wbaconmv)
+S3method(is_outlier, wbaconlm)
+
+export(wBACON)
+S3method(print, wbaconmv)
+S3method(summary, wbaconmv)
+S3method(vcov, wbaconmv)
+S3method(vcov, wbaconmv)
+S3method(plot, wbaconmv)
+
+export(distance)
+export(center)
+export(SeparationIndex)
+
+export(wBACON_reg)
+S3method(print, wbaconlm)
+S3method(summary, wbaconlm)
+S3method(fitted, wbaconlm)
+S3method(residuals, wbaconlm)
+S3method(coef, wbaconlm)
+S3method(vcov, wbaconlm)
+S3method(predict, wbaconlm)
+
+export(quantile_w)
+export(median_w)
+
+useDynLib(wbacon, wbacon)
+useDynLib(wbacon, wbacon_reg)
+useDynLib(wbacon, wquantile)
