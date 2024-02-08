@@ -5,11 +5,8 @@ knitr::opts_chunk$set(
     prompt = TRUE
 )
 
-## ---- eval = FALSE------------------------------------------------------------
-#  devtools::install_github("tobiasschoch/wbacon")
-
 ## -----------------------------------------------------------------------------
-library(wbacon)
+library("wbacon")
 
 ## -----------------------------------------------------------------------------
 data(bushfire, package = "modi")
@@ -37,11 +34,11 @@ which(is_outlier(fit))
 center(fit)
 
 ## -----------------------------------------------------------------------------
-data(data_philips, package = "cellWise")
-head(data_philips)
+data(philips)
+head(philips)
 
 ## -----------------------------------------------------------------------------
-fit <- wBACON(data_philips, alpha = 0.05, version = "V1")
+fit <- wBACON(philips, alpha = 0.05, version = "V1")
 fit
 
 ## -----------------------------------------------------------------------------

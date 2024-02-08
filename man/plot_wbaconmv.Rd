@@ -20,7 +20,7 @@ SeparationIndex(object, alpha = 0.05, tol = 1e-5, maxiter = 20)
 	\item{hex}{toogle the hexagonal bin plot on/off \code{[logical]} (default:
         \code{hex = FALSE})}
     \item{col}{color of outliers, \code{[integer]} (default: \code{col = 2})}
-    \item{pch}{plot character of outliers, code{[integer]} (default:
+    \item{pch}{plot character of outliers, \code{[integer]} (default:
         \code{pch = 19})}
 	\item{ask}{\code{[logical]}; if \code{TRUE}, the user is \emph{ask}ed before
 		each plot, see \code{\link{par}(ask=.)}.}
@@ -57,16 +57,18 @@ in place of the classical scatterplot.
 }
 \references{
 Rousseeuw, P.J. and K. van Driessen (1999).
-A Fast Algorithm for the Minimum Covariance Determinant,
-\emph{Technometrics} 41, pp. 212-223.
+    A Fast Algorithm for the Minimum Covariance Determinant,
+    \emph{Technometrics} \bold{41},  212--223. \doi{10.2307/1270566}
 
-Qiu, W. and H. Joe (2006). Separation index and partial
-membership for clustering,
-\emph{Computational Statistics and Data Analysis} 50, pp. 585-603.
+Qiu, W. and H. Joe (2006).
+    Separation index and partial membership for clustering,
+    \emph{Computational Statistics and Data Analysis} \bold{50}, 585--603.
+    \doi{10.1016/j.csda.2004.09.009}
 
 Willems, G., H. Joe, and R. Zamar (2009).
-Diagnosing Multivariate Outliers Detected by Robust Estimators,
-\emph{Journal of Computational and Graphical Statistics} 18, pp. 73-91.
+    Diagnosing Multivariate Outliers Detected by Robust Estimators,
+    \emph{Journal of Computational and Graphical Statistics} \bold{18}, 73--91.
+    \doi{10.1198/jcgs.2009.0005}
 }
 \seealso{
 \code{\link{wBACON}}
